@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f;
+    color: #f5f5f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(15,15,15,0.7);
+    border-bottom: 1px solid #222;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    color: #d89b6b;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d89b6b;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.tag {
+    color: #d89b6b;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #d89b6b;
+}
+
+.descricao {
+    color: #c7c7c7;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn,
+.btn-outline {
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn {
+    background: #d89b6b;
+    color: black;
+}
+
+.btn-outline {
+    border: 1px solid #d89b6b;
+    color: #d89b6b;
+}
+
+.btn:hover,
+.btn-outline:hover {
+    transform: translateY(-3px);
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero-image img {
+    width: 360px;
+    border-radius: 24px;
+    border: 4px solid #d89b6b;
+    box-shadow: 0 0 40px rgba(216,155,107,0.25);
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    color: #d89b6b;
+    margin-bottom: 35px;
+    font-size: 2.2rem;
+}
+
+.card,
+.skill-card,
+.timeline-item,
+.contact-card {
+    background: #171717;
+    border: 1px solid #262626;
+    border-radius: 18px;
+    padding: 28px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #222;
+    color: #a1a1a1;
+}
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .buttons,
+    .socials {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 280px;
+    }
+}
+.courses-card {
+    display: flex;
+    gap: 40px;
+    background: #171717;
+    border: 1px solid #262626;
+    border-radius: 20px;
+    padding: 35px;
+    flex-wrap: wrap;
+}
+
+.course-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.course-column ul {
+    list-style: none;
+}
+
+.course-column li {
+    margin-bottom: 18px;
+    color: #d6d6d6;
+    position: relative;
+    padding-left: 25px;
+    line-height: 1.6;
+}
+
+.course-column li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #d89b6b;
+    font-size: 1.2rem;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    text-decoration: none;
+    color: #f5f5f5;
+
+    background: #1d1d1d;
+    padding: 18px 22px;
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.contact-item i {
+    font-size: 1.3rem;
+    color: #d89b6b;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+    border: 1px solid #d89b6b;
+    background: #202020;
+}
